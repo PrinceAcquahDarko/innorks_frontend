@@ -1,0 +1,48 @@
+.card{
+    width:90%;
+    background: #292a2d;
+
+    
+
+}
+.card > img{
+    height:400px
+  }
+
+.content{
+    margin-top: 1em;
+}
+.issuebtn{
+    margin-bottom: 2em;
+}
+
+.adminbtns{
+    display:flex;
+    justify-content: center;
+}
+
+.row{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+   
+  
+    .content{
+        margin-top: 4em;
+    }
+    .card{
+        margin:auto;
+    }
+    .card > img{
+        height:250px
+      }
+    
+  }
+  
+  
+

@@ -1,0 +1,52 @@
+
+
+  <main class="container">
+   
+
+    <div class="bookscontainer text-center" *ngIf="allBooks$ | async as allBook else loadingOrError">
+     
+      <div class="row">
+          <div *ngFor="let book of allBook" class="col-lg-4 col-md-6 col-sm-12 gap">
+            <div class="card" style="width: 18rem;">
+                <img [src]="book.link" class="card-img-top" [alt]="book.title">
+                <div class="card-body">
+                  <h5 class="card-title" (click)="bookdetail(book.id)">{{book.title}}</h5>
+                </div>
+              </div>
+          </div>
+        
+
+         
+        </div>
+
+         
+        </div>
+
+
+        <ng-template #loadingOrError>
+          <ng-container *ngIf="errormsg; else loading">
+            <div  class="errors">
+              <div>
+                {{errormsg}}
+        
+              </div>
+        
+            </div>
+          </ng-container>
+          <ng-template #loading>
+            <div  class="errors">
+              <div>
+                <span  class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+
+        
+              </div>
+        
+            </div>
+          </ng-template>
+        </ng-template>
+
+</main>
+
+
+
+

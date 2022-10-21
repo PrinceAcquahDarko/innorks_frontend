@@ -1,0 +1,31 @@
+.navbar-collapse {
+    flex-grow:0
+}
+
+li{
+    margin-left:2em;
+    margin-right: 2em;
+    a{
+        color:white !important;
+        cursor: pointer;
+    }
+}
+
+.navbar-brand{
+    color:white
+}
+.navbar-toggler-icon, .navbar-toggler{
+    background-color:white !important
+}
+
+@media only screen and (max-width: 800px) {
+    .search{
+        display: none !important;
+    }
+
+    li{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+}
